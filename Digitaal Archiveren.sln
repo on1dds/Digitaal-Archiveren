@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSVImport", "CSVImport\CSVImport.csproj", "{CCE4D688-8B99-4013-9649-A6144667B20F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MaakMappen", "MaakMappen\MaakMappen.csproj", "{B20AC4B0-A572-4232-A598-B1E7025FCD5F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Abonneren", "Abonneren.forms\Abonneren.csproj", "{9212E45E-D45B-4E35-A2C6-D0D0D6C96EF0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CCE4D688-8B99-4013-9649-A6144667B20F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CCE4D688-8B99-4013-9649-A6144667B20F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CCE4D688-8B99-4013-9649-A6144667B20F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CCE4D688-8B99-4013-9649-A6144667B20F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B20AC4B0-A572-4232-A598-B1E7025FCD5F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B20AC4B0-A572-4232-A598-B1E7025FCD5F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B20AC4B0-A572-4232-A598-B1E7025FCD5F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B20AC4B0-A572-4232-A598-B1E7025FCD5F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9212E45E-D45B-4E35-A2C6-D0D0D6C96EF0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9212E45E-D45B-4E35-A2C6-D0D0D6C96EF0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9212E45E-D45B-4E35-A2C6-D0D0D6C96EF0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9212E45E-D45B-4E35-A2C6-D0D0D6C96EF0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
