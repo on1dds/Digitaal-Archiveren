@@ -8,17 +8,17 @@ using System.Xml;
 using System.Xml.Serialization;
 using System.IO;
 
-namespace Abonneren.forms
+namespace Abonneren
 {
 
 
     [XmlRoot("AbonnementenLijst")]
-    public class AbonnementenLijst
+    public class AboLijst
     {
         [XmlArray("Lijst"), XmlArrayItem("Abonnement")]
         public List<Abonnement> Lijst;
 
-        public AbonnementenLijst()
+        public AboLijst()
         {
             Lijst = new List<Abonnement>();
         }

@@ -1,49 +1,61 @@
 ﻿using System.Xml.Serialization;
 using System.IO;
+using System.Windows.Forms;
 
-namespace Abonneren.forms
+namespace Abonneren
 {
     public static class Tools
     {
+        static public void ToonFout(string fout)
+        {
+            MessageBox.Show(fout);
+        }
+
         static public SelectieLijst ReadSelectielijst(string fn)
         {
-            SelectieLijst lijst = new SelectieLijst();
             TextReader xmlReader;
             XmlSerializer xmlSerial;
 
-            xmlReader = new StreamReader(fn);
-            xmlSerial = new XmlSerializer(typeof(SelectieLijst));
-            lijst = (SelectieLijst)xmlSerial.Deserialize(xmlReader);
-            xmlReader.Close();
-            return lijst;
+            try
+            {
+                xmlReader = new StreamReader(fn);
+                xmlSerial = new XmlSerializer(typeof(SelectieLijst));
+
+                SelectieLijst lijst = new SelectieLijst();
+                lijst = (SelectieLijst)xmlSerial.Deserialize(xmlReader);
+                xmlReader.Close();
+                return lijst;
+            }
+            catch
+            {
+                return null;
+            }
         }
 
-
-
-        static public AbonnementenLijst ReadAbonnementen(string fn)
+        static public AboLijst ImportAbo(string fn)
         {
 
-            AbonnementenLijst lijst = new AbonnementenLijst();
+            AboLijst lijst = new AboLijst();
             if (File.Exists(fn))
             {
                 TextReader xmlReader;
                 XmlSerializer xmlSerial;
 
                 xmlReader = new StreamReader(fn);
-                xmlSerial = new XmlSerializer(typeof(AbonnementenLijst));
-                lijst = (AbonnementenLijst)xmlSerial.Deserialize(xmlReader);
+                xmlSerial = new XmlSerializer(typeof(AboLijst));
+                lijst = (AboLijst)xmlSerial.Deserialize(xmlReader);
                 xmlReader.Close();
             }
             return lijst;
         }
 
-        static public void WriteAbonnementen(string fn,AbonnementenLijst abonnementenlijst)
+        static public void ExportAbo(string fn,AboLijst abonnementenlijst)
         {
             TextWriter xmlWriter;
             XmlSerializer xmlSerial;
 
             xmlWriter = new StreamWriter(fn);
-            xmlSerial = new XmlSerializer(typeof(AbonnementenLijst));
+            xmlSerial = new XmlSerializer(typeof(AboLijst));
             xmlSerial.Serialize(xmlWriter, abonnementenlijst);
             xmlWriter.Close();
         }
