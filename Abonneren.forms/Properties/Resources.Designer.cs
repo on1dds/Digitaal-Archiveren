@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Abonneren.Properties {
+namespace Concorderen.Properties {
     using System;
     
     

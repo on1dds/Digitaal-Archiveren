@@ -48,7 +48,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>Abonneren.forms.Program</StartupObject>
+    <StartupObject>Concorderen.forms.Program</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -66,19 +66,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="xml\Abonnementen.cs" />
-    <Compile Include="Abonneren.cs">
+    <Compile Include="xml\concordanties.cs" />
+    <Compile Include="Formulier.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Abonneren.Designer.cs">
-      <DependentUpon>Abonneren.cs</DependentUpon>
+    <Compile Include="Formulier.Designer.cs">
+      <DependentUpon>Formulier.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="xml\selectielijst.cs" />
     <Compile Include="xml\tools.cs" />
-    <EmbeddedResource Include="Abonneren.resx">
-      <DependentUpon>Abonneren.cs</DependentUpon>
+    <EmbeddedResource Include="Formulier.resx">
+      <DependentUpon>Formulier.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

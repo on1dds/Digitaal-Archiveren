@@ -3,7 +3,7 @@ using System.Globalization;
 using System.Xml;
 using System.Xml.Serialization;
 
-namespace Abonneren
+namespace Concorderen
 {
     [XmlRoot("SelectieLijst")]
     public class SelectieLijst
